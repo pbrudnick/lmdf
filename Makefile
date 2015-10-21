@@ -16,6 +16,8 @@ movimientos:
 	#--------
 	# Se termino de compilar, realizando movimientos de archivos...
 	#--------
+	if [ -d "bin" ]; then rm -r bin; fi
+	mkdir bin
 	mv lmdf bin
 	mv router bin
 	mv ciudad bin
